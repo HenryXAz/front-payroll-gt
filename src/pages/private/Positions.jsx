@@ -73,7 +73,6 @@ const Positions = props => {
       notificationService.notify('posición creada correctamente', 'success')
       setOpen(false)
       props.addPosition(position.data)
-      console.log('paso aquí')
     }
   })
 

@@ -30,3 +30,13 @@ export const addPosition = (position) => ({
   payload: position,
 })
 
+// departments
+export const getDepartments = (departments) => ({
+  type: 'LIST_DEPARTMENTS',
+  payload: departments,
+})
+
+export const addDepartment = (department) => ({
+  type: 'ADD_DEPARTMENT',
+  payload: department,
+})

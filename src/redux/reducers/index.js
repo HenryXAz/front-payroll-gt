@@ -38,6 +38,19 @@ const reducer = (state, action) => {
         positionsList:  {...state.positionsList, results: [...state.positionsList.results, action.payload]}
       }
 
+    // departments
+    case 'LIST_DEPARTMENTS':
+      return {
+        ...state,
+        departmentsList: action.payload.data,
+      }
+
+    case 'ADD_DEPARTMENT':
+      return {
+        ...state,
+        departmentsList: {...state.departmentsList, results: [...state.departmentsList.results, action.payload]}
+      }
+
     default:
       return state;
   }

@@ -39,6 +39,9 @@ const initialState = {
 
   // positions
   positionsList: [],
+
+  // departments
+  departmentsList: [],
 };
 
 //Creacion del store
