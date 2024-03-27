@@ -30,7 +30,7 @@ const Guest = ({ children }) => {
   }
 
   return (
-      <div className="absolute w-full h-full  bg-slate-900">
+      <div className="absolute w-full h-full overflow-y-auto  bg-slate-900">
       <Navigation />
       <main className='max-w-7xl mx-auto'>{children}</main>
     </div>
