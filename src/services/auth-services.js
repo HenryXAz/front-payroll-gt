@@ -23,20 +23,17 @@ class AuthService{
                 data: loginData,
             });
 
+            console.log(response);
             sessionStorage.setItem('token', response.data.token)
-            const userDataJSON = JSON.stringify(response.data.data_user);
+            const userDataJSON = JSON.stringify(response.data.user);
             sessionStorage.setItem('data-user', userDataJSON)
 
-            return this.getMenu(response.data.data_user.role);
+            return this.getMenu(response.data.user.role);
              
         } catch (error) {
-            console.error("Error al iniciar sesión:", error);
-            throw error;
+            throw new Error('login error')
         }
     }
-
-
-
 
     // EJEMPLO DE USO
     // authService.resetPassword('empresa2', 'empresa2', 3)

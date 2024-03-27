@@ -25,7 +25,7 @@ class ApiService {
 
   // resolve request with fetch
   async #request(url, method, data) {
-    this.#token = `Token ${sessionService.get('token')}`
+    this.#token = `Token ${sessionStorage.getItem('token')}`
 
     const options = {
       method,
