@@ -1,6 +1,14 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+
 
 const Sidebar = ({ menu, user }) => {
+  const navigate = useNavigate()
+
+  const handleLogOut = () => {
+    sessionStorage.clear()
+    navigate('/login') 
+  }
+
   return (
     <>
       <aside
@@ -48,6 +56,9 @@ const Sidebar = ({ menu, user }) => {
               </div>
             ))}
           </ul>
+          <button onClick={handleLogOut} className='p-2 text-gray-200 border border-gray-500  w-full rounded-md mx-auto block mt-5'>
+            Salir
+          </button>
         </div>
       </aside>
     </>

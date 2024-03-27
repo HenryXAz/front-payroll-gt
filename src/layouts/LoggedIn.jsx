@@ -43,7 +43,6 @@ const LoggedIn = ({ children }) => {
       <MainLoggedIn>
         {children}
       </MainLoggedIn>
-      {/* <main className="ml-48 py-6">{children}</main> */}
     </>
   )
 }

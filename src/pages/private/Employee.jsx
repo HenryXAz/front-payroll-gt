@@ -115,7 +115,7 @@ const Employee = props => {
       </Button>
 
       {!isOpen && (
-        <div className='max-w-6xl mt-5 mx-auto flex gap-2 justify-center'>
+        <div className='max-w-4xl mt-5 mx-auto flex gap-2 justify-center'>
           {props.employeesList.results &&
             props.employeesList.results.map((employee) => (
               <div key={employee.id} className='w-1/4 p-2 border border-gray-400 rounded-md'>
