@@ -21,6 +21,7 @@ import schema from '@/forms/schemas/loginSchema'
 
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import notificationService from '@/services/notification-service'
 // import { authService } from '@/services/auth-services'
 
 export const Login = () => {
@@ -44,8 +45,10 @@ export const Login = () => {
 
   const login = handleSubmit(async values => {
       const { email, password } = values
-      await authService.login(email, password) 
+      const menu = await authService.login(email, password) 
+      sessionStorage.setItem('menu', JSON.stringify(menu))
       navigate('/dashboard')
+      notificationService.notify('Bienvenido', 'success')
   })
 
   const verifyIfEmailExists = async () => {
