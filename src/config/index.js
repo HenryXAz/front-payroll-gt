@@ -1,11 +1,11 @@
 const config = {
   local: {
     /// local environment
-        API_URL: 'http://localhost:8000/api/v1',
+    API_URL: 'https://backend-payroll-gt-eyhe.onrender.com',
   },
   test: {
     // test environment
-    API_URL: '',
+    API_URL: 'https://backend-payroll-gt-eyhe.onrender.com',
   },
   production: {
     // production environment
