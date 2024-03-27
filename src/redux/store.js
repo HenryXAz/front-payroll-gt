@@ -35,7 +35,10 @@ const initialState = {
       name: 'Usuario 2',
       email: 'usuario2@example.com'
     }
-  ]
+  ],
+
+  // positions
+  positionsList: [],
 };
 
 //Creacion del store

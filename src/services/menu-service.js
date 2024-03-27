@@ -31,9 +31,19 @@ export const menuAdmin = [
         submenu:[
             {
                 name: 'employees',
-                path: '/dashboard/employees',
+                path: '/employees',
                 icon: '',
-            }
+            },
+            {
+                name: 'departaments',
+                path: '/departaments',
+                icon: '',
+            },
+            {
+                name: 'positions',
+                path: '/positions',
+                icon: '',
+            },
         ]
     }
 ]

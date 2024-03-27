@@ -12,6 +12,8 @@ import {
   Company,
 } from '../pages/private'
 import { Login,Home, Uikit, Register, NotFound} from '../pages/public';
+import Positions from '@/pages/private/Positions';
+import Departments from '@/pages/private/Departments';
 
 
 
@@ -31,7 +33,9 @@ const AppRouter = () => {
       <Route path='/dashboard' element={<AuthRoute>< Dashboard/></AuthRoute>}/>
       <Route path='/profile' element={<AuthRoute><Profile /></AuthRoute>}/>
       <Route path='/company' element={<AuthRoute>< Company/></AuthRoute>}/>
-      <Route path='/employee' element={<AuthRoute><Employee /></AuthRoute>}/>
+      <Route path='/employees' element={<AuthRoute><Employee /></AuthRoute>}/>
+      <Route path='/positions' element={<AuthRoute><Positions /></AuthRoute>}/>  
+      <Route path='/departaments' element={<AuthRoute><Departments /></AuthRoute>}/>
       <Route path='/Payroll' element={<AuthRoute> <Payroll/> </AuthRoute>}/>
       <Route path='/store' element={<AuthRoute>< Store/></AuthRoute>}/>
     </Routes>

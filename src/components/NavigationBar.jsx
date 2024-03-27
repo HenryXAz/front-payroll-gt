@@ -15,7 +15,6 @@ const NavigationBar = () => {
     for (let i = 0; i < menus.length; i++) {
       for (let j = 0; j < menus[i].submenu.length; j++) {
         if (menus[i].submenu[j].path === location.pathname) {
-          console.log('menu', menus[i].submenu[j].name)
           menuObject = {
             path: menus[i].submenu[j].path,
             name: menus[i].submenu[j].name,

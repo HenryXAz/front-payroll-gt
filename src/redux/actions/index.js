@@ -1,3 +1,5 @@
+import { apiService } from "@/services/api-service";
+
 // Lista de actions relacionadas a company 
 export const addCompany = (company) => ({
     type: 'ADD_COMPANY',
@@ -16,4 +18,15 @@ export const addCompany = (company) => ({
     //carga útil: id para encontrar company
     payload: companyId
   });
-  
+
+// positions
+export const getPositions = (positions) => ({
+  type: 'LIST_POSITIONS',
+  payload: positions,
+})
+
+export const addPosition = (position) => ({
+  type: 'ADD_POSITION',
+  payload: position,
+})
+

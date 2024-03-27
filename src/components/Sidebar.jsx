@@ -25,7 +25,7 @@ const Sidebar = ({ menu, user }) => {
                 <li>
                   <button
                     href={option.path}
-                    className='flex w-full items-center p-2 text-gray-200 rounded-lg hover:bg-gray-900 hover:bg-gray-700 group'
+                    className='flex w-full text-sm items-center p-2 text-gray-200 rounded-lg hover:bg-gray-900 hover:bg-gray-700 group'
                   >
                     <span className='ms-3'>{option.name}</span>
                   </button>
@@ -36,7 +36,7 @@ const Sidebar = ({ menu, user }) => {
                         <li key={index}>
                           <Link
                             to={submenu.path}
-                            className='flex w-full pl-6  items-center p-2 text-gray-200 rounded-lg hover:bg-gray-900 hover:bg-gray-700 group'
+                            className='flex text-sm w-full pl-6  items-center p-2 text-gray-200 rounded-lg hover:bg-gray-900 hover:bg-gray-700 group'
                           >
                             {submenu.name}
                           </Link>

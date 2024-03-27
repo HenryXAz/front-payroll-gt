@@ -24,6 +24,20 @@ const reducer = (state, action) => {
         company.id !== action.payload
         )
       };
+
+    // positions
+    case 'LIST_POSITIONS':
+      return {
+        ...state,
+        positionsList: action.payload
+    }
+
+    case 'ADD_POSITION':
+      return {
+        ...state,
+        positionsList:  {...state.positionsList, results: [...state.positionsList.results, action.payload]}
+      }
+
     default:
       return state;
   }
