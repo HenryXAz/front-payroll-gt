@@ -24,7 +24,7 @@ class EmployeeService {
 
     async createEmployee(data) {
         const post = await this.apiService.post({
-            url: '/employees', 
+            url: '/employees/', 
             data: data});
         return post;
     }

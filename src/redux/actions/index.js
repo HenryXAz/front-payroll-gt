@@ -40,3 +40,14 @@ export const addDepartment = (department) => ({
   type: 'ADD_DEPARTMENT',
   payload: department,
 })
+
+// employees
+export const getEmployees = (employees) => ({
+  type: 'LIST_EMPLOYEES',
+  payload: employees,
+})
+
+export const addEmployee = (employee) => ({
+  type: 'ADD_EMPLOYEE',
+  payload: employee,
+})

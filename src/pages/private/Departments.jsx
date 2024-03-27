@@ -146,4 +146,3 @@ const mapDispatchToProps = {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Departments)
-// export default Departments

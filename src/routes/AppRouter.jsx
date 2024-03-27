@@ -4,7 +4,6 @@ import { AuthRoute } from '../routes/AuthRoute';
 
 
 import {
-  Employee,
   Payroll,
   Profile,
   Store,
@@ -14,7 +13,7 @@ import {
 import { Login,Home, Uikit, Register, NotFound} from '../pages/public';
 import Positions from '@/pages/private/Positions';
 import Departments from '@/pages/private/Departments';
-
+import Employee from '@/pages/private/Employee';
 
 
 const AppRouter = () => {

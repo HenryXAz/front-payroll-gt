@@ -51,6 +51,19 @@ const reducer = (state, action) => {
         departmentsList: {...state.departmentsList, results: [...state.departmentsList.results, action.payload]}
       }
 
+    // employees
+    case 'LIST_EMPLOYEES': 
+      return {
+        ...state,
+        employeesList: action.payload.data
+      }
+    
+    case 'ADD_EMPLOYEE':
+      return {
+        ...state,
+        employeesList: {...state.employeesList, results: [...state.employeesList.results, action.payload]}
+      }
+
     default:
       return state;
   }
