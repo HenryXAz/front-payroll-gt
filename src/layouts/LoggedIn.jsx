@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 
 // react router
 import { Navigate } from 'react-router-dom'
+import MainLoggedIn from '@/components/MainLoggedIn'
 
 // eslint-disable-next-line react/prop-types
 const LoggedIn = ({ children }) => {
@@ -39,7 +40,10 @@ const LoggedIn = ({ children }) => {
     <>
       <Sidebar menu={menu} user={user} />
 
-      <main className="ml-48 py-6">{children}</main>
+      <MainLoggedIn>
+        {children}
+      </MainLoggedIn>
+      {/* <main className="ml-48 py-6">{children}</main> */}
     </>
   )
 }
