@@ -5,7 +5,7 @@ const Sidebar = ({ menu, user }) => {
     <>
       <aside
         id='sidebar-multi-level-sidebar'
-        className='fixed top-0 left-0 z-40 w-[200px] h-screen transition-transform -translate-x-full sm:translate-x-0'
+        className='py-6 px-4 fixed top-0 left-0 z-40 w-[200px] h-screen transition-transform -translate-x-full sm:translate-x-0'
         aria-label='Sidebar'
       >
         <div className='h-full px-4 py-6 overflow-y-auto bg-gray-800 rounded-xl'>

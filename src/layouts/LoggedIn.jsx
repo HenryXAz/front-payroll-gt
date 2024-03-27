@@ -39,7 +39,7 @@ const LoggedIn = ({ children }) => {
     <>
       <Sidebar menu={menu} user={user} />
 
-      <main className="ml-48 ">{children}</main>
+      <main className="ml-48 py-6">{children}</main>
     </>
   )
 }
