@@ -1,19 +1,10 @@
-
-import { Link } from 'react-router-dom';
+import Guest from "@/layouts/Guest"
 
 export const Login = () => {
-  
-
   return (
-    <div>
-      <h1>Bienvenido al Módulo Login</h1>
-      
-      <Link to='/Dashboard' className='btn'>
-        IniciarSesión
-      </Link>
-      
-    </div>
+    <Guest>
+      <h1>Login Page</h1>
+    </Guest>
   )
 }
-
 

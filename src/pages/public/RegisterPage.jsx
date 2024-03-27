@@ -1,10 +1,9 @@
-import { Navigation } from '../../components/Navigation'
+import Guest from "@/layouts/Guest"
 
 export const Register = () => (
-  <>
-    <Navigation />
-    <div>Bienvenido a Register</div>
-  </>
+  <Guest> 
+    <h1>Register page</h1>
+  </Guest>
 )
 
 
